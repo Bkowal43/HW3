@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salary Calculator Results</title>
+		<link rel="stylesheet" type="text/css" href="design.css" />
     </head>
         <%
         double hoursWorked= Integer.parseInt(request.getParameter("hours"));
@@ -47,7 +48,8 @@
         %>
     <body>
         <h1>Salary Info</h1>
-        <table>
+        <div id=resultsBox>
+		<table>
             <tr>
                 <td>Total Hours Worked:</td>
                 <td><%= totalHoursWorked %></td>
@@ -89,5 +91,6 @@
                 <td><%= netPay %></td>
             </tr>
         </table>
+		</div>
     </body>
 </html>
